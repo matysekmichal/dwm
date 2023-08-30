@@ -59,7 +59,7 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod1Mask
+#define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -91,20 +91,20 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
-    { MODKEY|Mod4Mask,              XK_h,      incrgaps,       {.i = +1 } },
-    { MODKEY|Mod4Mask,              XK_l,      incrgaps,       {.i = -1 } },
-    { MODKEY|Mod4Mask|ShiftMask,    XK_h,      incrogaps,      {.i = +1 } },
-    { MODKEY|Mod4Mask|ShiftMask,    XK_l,      incrogaps,      {.i = -1 } },
-    { MODKEY|Mod4Mask|ControlMask,  XK_h,      incrigaps,      {.i = +1 } },
-    { MODKEY|Mod4Mask|ControlMask,  XK_l,      incrigaps,      {.i = -1 } },
-    { MODKEY|Mod4Mask,              XK_0,      togglegaps,     {0} },
-    { MODKEY|Mod4Mask|ShiftMask,    XK_0,      defaultgaps,    {0} },
+    { MODKEY|Mod1Mask,              XK_h,      incrgaps,       {.i = +1 } },
+    { MODKEY|Mod1Mask,              XK_l,      incrgaps,       {.i = -1 } },
+    { MODKEY|Mod1Mask|ShiftMask,    XK_h,      incrogaps,      {.i = +1 } },
+    { MODKEY|Mod1Mask|ShiftMask,    XK_l,      incrogaps,      {.i = -1 } },
+    { MODKEY|Mod1Mask|ControlMask,  XK_h,      incrigaps,      {.i = +1 } },
+    { MODKEY|Mod1Mask|ControlMask,  XK_l,      incrigaps,      {.i = -1 } },
+    { MODKEY|Mod1Mask,              XK_0,      togglegaps,     {0} },
+    { MODKEY|Mod1Mask|ShiftMask,    XK_0,      defaultgaps,    {0} },
     { MODKEY,                       XK_y,      incrihgaps,     {.i = +1 } },
     { MODKEY,                       XK_o,      incrihgaps,     {.i = -1 } },
     { MODKEY|ControlMask,           XK_y,      incrivgaps,     {.i = +1 } },
     { MODKEY|ControlMask,           XK_o,      incrivgaps,     {.i = -1 } },
-    { MODKEY|Mod4Mask,              XK_y,      incrohgaps,     {.i = +1 } },
-    { MODKEY|Mod4Mask,              XK_o,      incrohgaps,     {.i = -1 } },
+    { MODKEY|Mod1Mask,              XK_y,      incrohgaps,     {.i = +1 } },
+    { MODKEY|Mod1Mask,              XK_o,      incrohgaps,     {.i = -1 } },
     { MODKEY|ShiftMask,             XK_y,      incrovgaps,     {.i = +1 } },
     { MODKEY|ShiftMask,             XK_o,      incrovgaps,     {.i = -1 } },
 	{ MODKEY,                       XK_Return, zoom,           {0} },
