@@ -15,15 +15,22 @@ static const char *fonts[]          = {
     "SymbolsNerdFont:size=11:antialias=true:autohint=true",
 };
 static const char dmenufont[]       = "Hack:size=10:antialias=true:autohint=true";
-static const char col_gray1[]       = "#222222";
+static const char col_gray1[]       = "#1c1c1c";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#2060b5";
+static const unsigned int baralpha = 0xD6;
+static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_gray1,  col_cyan  },
+	[SchemeSel]  = { col_gray4, col_gray1, col_cyan  },
+};
+static const unsigned int alphas[][3]      = {
+    /*               fg      bg        border*/
+    [SchemeNorm] = { OPAQUE, baralpha, borderalpha },
+	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
 };
 
 /* tagging */
